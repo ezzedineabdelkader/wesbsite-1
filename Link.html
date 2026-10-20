@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator Room - University of Balamand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aero-blue': '#005EB8',
+                        'aero-blue-dark': '#004B94',
+                        'aero-gold': '#FDB813',
+                        'uob-dark-blue': '#003865',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* A little extra polish for transitions */
+        .transition-all-300 {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-white text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 border-b border-gray-200 sticky top-0 z-50 backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-aero-blue">
+                Simulator Room <span class="font-normal text-gray-500">- University of Balamand</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-gray-600">
+                <a href="#about" class="hover:text-aero-blue transition-all-300">About</a>
+                <a href="#history" class="hover:text-aero-blue transition-all-300">History</a>
+                <a href="#gallery" class="hover:text-aero-blue transition-all-300">Photo Gallery</a>
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=3y4Sirz4-Uqrynp5d7nnzyIM37F6OehCq3WBCscjMS9UQ1VCU1gxOTk4V1pNNEw5SUtZVTRWUVZWQi4u&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAP8HVlleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacUKaBsDy5fglISMcCClb5BPJS0X16PH9Zz8n420V0-19EOB73bCeKuVLSmvQ_aem_BZALF08Rml2rZjzbeod2BA&route=shorturl"
+                    target="_blank" class="hover:text-aero-blue transition-all-300">Book a Visit</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 1. Hero Section with Responsive Background Images -->
+        <section class="relative py-28 md:py-40 text-white">
+            <!-- Background Images & Overlay -->
+            <div class="absolute inset-0 z-0">
+                <!-- Mobile Image: Visible by default, hidden on medium screens and up -->
+                <img src="images/simulator-desk-tall.jpg" alt="Simulator Desk"
+                    class="block md:hidden w-full h-full object-cover">
+
+                <!-- Desktop Image: Hidden by default, visible on medium screens and up -->
+                <img src="images/simulator-desk.jpg" alt="Simulator Desk"
+                    class="hidden md:block w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
+                <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                    Welcome to Our Simulator Room
+                </h1>
+                <p class="mt-4 text-lg text-gray-200 max-w-2xl">
+                    Immersive experience with hands-on aviation training using our advanced DGEN 380 Engine Simulator and integrated flight and instrument simulation 			systems. The Simulator Room enables students to apply classroom knowledge in a controlled environment, understand engine systems, practice 			instrument interpretation and perform flight operations using simulation platforms..
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- 2. "Why Join Us?" Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl font-bold text-gray-900">A Hub for Aspiring Aviators</h2>
+                    <p class="mt-4 text-lg text-gray-600">Our mission is to support the next generation of aviation leaders by providing opportunities for academic 			growth and collaborative development. Through online flight sessions, aviation discussions, and events, we encourage a community where students 			can connect, learn and actively participate in shaping their aviation journey and contribute to the development of aviation at Balamand.
+                    </p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-12 text-center">
+                    <!-- Feature 1: Networking -->
+                    <div>
+                        <div
+                            class="bg-aero-blue/10 text-aero-blue w-20 h-20 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mt-6 mb-2">Engine Simulator</h3>
+                        <p class="text-gray-600">Explore the operational principles of a modern turbofan engine through interactive hands-on simulation of the DGEN 380 engine simulator, focusing on engine performance, and system behavior</p>
+                    </div>
+                    <!-- Feature 2: Learning -->
+                    <div>
+                        <div
+                            class="bg-aero-blue/10 text-aero-blue w-20 h-20 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mt-6 mb-2">Flight Simulator</h3>
+                        <p class="text-gray-600">Engage with aircraft operations and system through X-Plane simulation, performing online flights, executing procedures, and implementing modifications to virtual aircraft within the simulator environment.
+                        </p>
+                    </div>
+                    <!-- Feature 3: Experience -->
+                    <div>
+                        <div
+                            class="bg-aero-blue/10 text-aero-blue w-20 h-20 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mt-6 mb-2">Six Packs</h3>
+                        <p class="text-gray-600"> Develop a foundational understanding of aircraft basic flight instruments with emphasis on accurate parameter 			interpretation, system interconnection, and instrument installation, while examining the operational principles that determine how each 			instrument functions and displays its indications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="font-serif text-4xl font-bold text-black mb-6">History</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    The Simulator Room was established in May 2025 to support and inspire students at the University of Balamand. The facility provides a structured 		environment where students can expand their knowledge of aviation through hands-on simulation using simulation platforms.
+		
+The development of the Simulator Room reflects a commitment to academic excellence, and aviation enthusiasm at Balamand. It continues to evolve 		enabling students to translate classroom theory into practical hands-on simulation.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- 5. NEW Gallery Section -->
+        <section id="gallery" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="font-serif text-4xl font-bold text-gray-900 text-center mb-12">Photo Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Image 2 -->
+                    <a href="images/2.jpeg"
+                        class="group block rounded-lg overflow-hidden shadow-md transition-all-300 hover:shadow-xl hover:-translate-y-2">
+                        <img src="images/2.jpeg" alt="Simulator Room Gallery Image 1"
+                            class="w-full h-80 object-cover transition-all-300 group-hover:scale-105">
+                    </a>
+                    </a>
+                    <!-- Image 2 -->
+                    <a href="images/1.jpeg"
+                        class="group block rounded-lg overflow-hidden shadow-md transition-all-300 hover:shadow-xl hover:-translate-y-2">
+                        <img src="images/1.jpeg" alt="Simulator Room Gallery Image 1"
+                            class="w-full h-80 object-cover transition-all-300 group-hover:scale-105">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-uob-dark-blue text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 text-center md:text-left">
+                <!-- Column 1: About -->
+                <div class="md:col-span-1">
+                    <h4 class="font-bold text-lg mb-4 text-white">SIMULATOR ROOM</h4>
+                    <p class="text-sm text-gray-400 max-w-xs mx-auto md:mx-0">The Premier room at the Engineering
+                        Complex building for aspiring aviation professionals at the University of Balamand.</p>
+                </div>
+
+                <!-- Column 3: Socials -->
+                <div>
+                    <h5 class="font-semibold mb-4 text-gray-300">Follow Us</h5>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.instagram.com/uobraes?igsh=aHNndWhtbWZid2l0" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-white">
+                <p>&copy; 2026 Simulator Room - University of Balamand - Created by Ezzedine Abdelkader. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
